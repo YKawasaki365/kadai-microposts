@@ -1,3 +1,5 @@
+<!-- "My profile"画面内->自分名前/アイコン部分 -->
+
 <div class="card">
     <div class="card-header">
         <h3 class="card-title">{{ $user->name }}</h3>

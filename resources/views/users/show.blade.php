@@ -1,3 +1,5 @@
+<!-- タブ"My profile"->トップ画面全体 -->
+
 @extends('layouts.app')
 
 @section('content')

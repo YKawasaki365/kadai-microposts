@@ -1,3 +1,5 @@
+<!-- タブ"My profile"->"Followers"->フォロワ―の一覧画面 -->
+
 @extends('layouts.app')
 
 @section('content')

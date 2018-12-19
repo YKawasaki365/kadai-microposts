@@ -1,3 +1,5 @@
+<!-- タブ"My profile"&"Users"->ツィート部分 -->
+
 <ul class="media-list">
     @foreach ($microposts as $micropost)
         <li class="media mb-3">
@@ -10,6 +12,7 @@
                     <p>{!! nl2br(e($micropost->content)) !!}</p>
                 </div>
                 <div>
+                    @include('user_favorite.favorite_button', ['micropost' => $micropost])
                     @if (Auth::id() == $micropost->user_id)
                         {!! Form::open(['route' => ['microposts.destroy', $micropost->id], 'method' => 'delete']) !!}
                             {!! Form::submit('Delete', ['class' => 'btn btn-danger btn-sm']) !!}

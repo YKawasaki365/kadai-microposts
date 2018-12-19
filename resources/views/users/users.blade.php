@@ -1,3 +1,5 @@
+<!-- タブ"Users"->トップ画面全体 -->
+
 @if (count($users) > 0)
     <ul class="media-list">
         @foreach ($users as $user)

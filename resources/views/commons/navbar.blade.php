@@ -1,3 +1,5 @@
+<!-- 上ナビバー->ボタン"Users"、"「ユーザ名」" -->
+
 <header class="mb-4">
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark"> 
         <a class="navbar-brand" href="/">Microposts</a>
@@ -16,15 +18,12 @@
                             <ul class="dropdown-menu">
                                 <li>{!! link_to_route('users.show', 'My profile', ['id' => Auth::id()]) !!}</li>
                                 <li role="separator" class="divider"></li>
+
+                                <li>{!! link_to_route('favorites.favorites', 'Favorites', ['id' => Auth::id()]) !!}</li>
+                                <li role="separator" class="divider"></li>
+
                                 <li>{!! link_to_route('logout.get', 'Logout') !!}</li>
                             </ul>
-
-<!--                        <ul class="dropdown-menu dropdown-menu-right">
-                            <li class="dropdown-item"><a href="#">My profile</a></li>
-                            <li class="dropdown-divider"></li>
-                            <li class="dropdown-item">{!! link_to_route('logout.get', 'Logout') !!}</li>
-                        </ul>
--->
                     </li>
                 @else
                     <li class="nav-item">{!! link_to_route('signup.get', 'Signup', [], ['class' => 'nav-link']) !!}</li>

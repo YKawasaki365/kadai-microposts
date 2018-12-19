@@ -1,3 +1,5 @@
+<!-- タブ"Users"->他ユーザ"View profile"->画面全体 -->
+
 @if (Auth::id() != $user->id)
     @if (Auth::user()->is_following($user->id))
         {!! Form::open(['route' => ['user.unfollow', $user->id], 'method' => 'delete']) !!}

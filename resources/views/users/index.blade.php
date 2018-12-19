@@ -1,3 +1,5 @@
+<!-- タブ"Users"->ユーザー一覧 -->
+
 @extends('layouts.app')
 
 @section('content')
